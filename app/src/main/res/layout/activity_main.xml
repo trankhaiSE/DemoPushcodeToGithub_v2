@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="1"
+        android:id="@+id/tb_KQ">
+        <EditText
+            android:id="@+id/editText_chieudai"
+            android:hint="Nhập chiều dài"
+            android:textSize="30sp"/>
+        <EditText
+            android:id="@+id/editText_chieurong"
+            android:hint="Nhập chiều rộng"
+            android:textSize="30sp"/>
+        <TableRow>
+            <TextView
+                android:text="Diện tích"
+                android:textSize="30sp"/>
+            <TextView
+                android:id="@+id/textView_KQChuvi"
+                android:textSize="30sp"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="Chu vi"
+                android:textSize="30sp"/>
+            <TextView
+                android:id="@+id/textView_KQDientich"
+                android:textSize="30sp"/>
+        </TableRow>
+        <Button
+            android:text="tính"
+            android:textSize="30sp"
+            android:onClick="btn_TinhDientich"/>
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
